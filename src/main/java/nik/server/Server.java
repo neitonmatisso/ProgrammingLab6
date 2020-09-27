@@ -57,7 +57,7 @@ public class Server implements ConnectionListener {
             }
         });
 
-        try(ServerSocket serverSocket = new ServerSocket(7878)) {
+        try(ServerSocket serverSocket = new ServerSocket(7872)) {
             System.out.println("Server start...");
             while (true){
                 Connection connection = new Connection(serverSocket.accept(),this);
